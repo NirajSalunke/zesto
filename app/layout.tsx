@@ -4,6 +4,7 @@ import "./globals.css";
 // import {dark}
 import { dark } from "@clerk/themes";
 import { ClerkProvider } from "@clerk/nextjs";
+import { Toaster } from "@/components/ui/toaster";
 // import "../middleware";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -34,7 +35,6 @@ export default function RootLayout({
           layout: {
             logoImageUrl: "/icons/logo.svg",
             socialButtonsVariant: "iconButton",
-            // socialButtonsPlacement: "",
           },
           variables: {
             colorText: "#fff",
@@ -49,6 +49,7 @@ export default function RootLayout({
           className={` bg-dark-2  ${geistSans.variable} ${geistMono.variable} antialiased`}
         >
           {children}
+          <Toaster />
         </body>
       </ClerkProvider>
     </html>
