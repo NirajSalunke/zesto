@@ -14,7 +14,7 @@ const HomeCard = ({
 }) => {
   return (
     <div
-      className={`${bg_color} px-4 py-6 flex flex-col justify-between w-full xl:max-w-[276px] min-h-[260px] rounded-[14px] cursor-pointer  hover:scale-105 hover:bg-opacity-80   transition-all `}
+      className={`${bg_color}  px-4 py-6 flex flex-col justify-between w-full xl:max-w-[276px] min-h-[260px] rounded-[14px] cursor-pointer  hover:scale-105 hover:bg-opacity-80   transition-all `}
       onClick={handleClick}
     >
       <div className="flex-center hover:scale-110  transition-all glassmorphism  size-12 rounded-[10px]">

@@ -20,7 +20,7 @@ const MeetingModal = ({
   onClose: () => void;
   title: string;
   className?: string;
-  buttonText: string;
+  buttonText?: string;
   image?: string;
   buttonIcon?: string;
   handleClick?: () => void;
