@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/b45db768-a9e1-4e5a-a699-ddaeebedef2c)
+
 ---
 
 # ZESTO - Video Conferencing App
