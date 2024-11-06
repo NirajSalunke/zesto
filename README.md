@@ -5,7 +5,7 @@
 This is a full-stack video conferencing application built using Next.js, Clerk, and Stream. The app offers real-time video conferencing with a host of features including user authentication, meeting scheduling, layout customization, and viewing recorded sessions. Clerk powers secure user management, while Stream enhances the app with high-quality video and audio capabilities.
 
 ## Its hosted 
-  [zesto.com](zestocaller.vercel.app)
+  [www.zesto.com](https://zestocaller.vercel.app/)
 
 ## Table of Contents
 
