@@ -54,7 +54,6 @@ const MeetingTypeList = () => {
       }
       toast({
         title: "Meeting Started ",
-        description: "Friday, February 10, 2023 at 5:57 PM",
         action: <ToastAction altText="Goto schedule to undo">OK</ToastAction>,
       });
     } catch (error) {
