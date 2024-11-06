@@ -11,6 +11,7 @@ import { ToastAction } from "@radix-ui/react-toast";
 import { Textarea } from "./ui/textarea";
 // import { Router } from "next/router";
 import DatePicker from "react-datepicker";
+import { Input } from "./ui/input";
 
 const MeetingTypeList = () => {
   const { user } = useUser();
@@ -169,6 +170,22 @@ const MeetingTypeList = () => {
         buttonText="Start Meeting"
         handleClick={createMeeting}
       />
+      <MeetingModal
+        isOpen={meetingState === "isJoiningMeeting"}
+        onClose={() => setmeetingState(undefined)}
+        title="Join Scedhuled Meeting "
+        className="text-center"
+        buttonText="Join using Invite link"
+        handleClick={() => {
+          router.push(values.link);
+        }}
+      >
+        <Input
+          onChange={(e) => setvalues({ ...values, link: e.target.value })}
+          className="bg-dark-3 border-none focus-visible:ring-1  focus-visible:ring-offset-0 "
+          placeholder="Paste your meeting link here"
+        />
+      </MeetingModal>
     </section>
   );
 };
